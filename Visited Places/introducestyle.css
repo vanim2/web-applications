@@ -1,0 +1,57 @@
+* {
+    background-color: rgb(226, 225, 185);
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-style: oblique;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(116, 116, 201);
+    padding-top: 5px;
+}
+
+table {
+    padding: 1%;
+    width: 15%;
+    float: left;
+    height: 100vh;
+}
+
+section {
+    padding-left: 3rem;
+    width: 80%;
+    clear: both;
+    display: inline-block;
+    padding-top: 5rem;
+}
+
+img {
+    width: 25%;
+    margin-left: 10px;
+    border-radius: 80%;
+}
+
+th {
+    font-size: 2rem;
+    color: rgb(48, 49, 53);
+    padding-bottom: 1rem;
+}
+
+td {
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 2%;
+}
+
+table tr:nth-child(even) td {
+    background-color: rgb(206, 202, 142);
+}
+
+table tr:hover td {
+    background-color: white
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="introducestyle.css">
+
+    <script type="text/javascript">
+        function upDate(place) {
+            x = document.getElementById(place.textContent);
+            x.style.border = ".35rem solid white";
+            x.style.borderRadius = '1em';
+            x.style.transform = "rotate";
+            // x.style.transform = "skewy(40deg)";
+        }
+
+        function unDo(place) {
+            x = document.getElementById(place.textContent);
+            x.style.border = "none";
+            x.style.borderRadius = '80%';
+            x.style.transform = "none";
+
+        }
+    </script>
+    <title>week1 capstone</title>
+</head>
+
+<body>
+    <header>
+        <h1>The places i visited in USA</h1>
+    </header>
+    <Aside>
+        <table>
+            <tr>
+                <th>Places Names</th>
+            </tr>
+            <tr>
+                <td onmouseover="upDate(this)" onmouseout="unDo(this)">New York</td>
+            </tr>
+            <tr>
+                <td onmouseover="upDate(this)" onmouseout="unDo(this)">chicago</td>
+            </tr>
+            <tr>
+                <td onmouseover="upDate(this)" onmouseout="unDo(this)">Niagara Falls</td>
+            </tr>
+            <tr>
+                <td onmouseover="upDate(this)" onmouseout="unDo(this)">Great Smoky Mountains</td>
+            </tr>
+            <tr>
+                <td onmouseover="upDate(this)" onmouseout="unDo(this)">Jacksonville</td>
+            </tr>
+            <tr>
+                <td onmouseover="upDate(this)" onmouseout="unDo(this)">Tampa</td>
+            </tr>
+            <tr>
+                <td onmouseover="upDate(this)" onmouseout="unDo(this)">Orlando</td>
+            </tr>
+            <tr>
+                <td onmouseover="upDate(this)" onmouseout="unDo(this)">Miami</td>
+            </tr>
+            <tr>
+                <td onmouseover="upDate(this)" onmouseout="unDo(this)">Key West</td>
+            </tr>
+            <tr>
+                <td onmouseover="upDate(this)" onmouseout="unDo(this)">Atlanta GA</td>
+            </tr>
+
+        </table>
+    </Aside>
+    <section>
+        <img id="New York" src="https://static.wikia.nocookie.net/cnc_gamepedia_en/images/4/47/New_york.jpg/revision/latest/scale-to-width-down/1000?cb=20180801163953" alt="New York">
+        <img id="chicago" src="https://images.thestar.com/gxs-8LXBKha9CqiH8mRrzOFsk0Q=/1086x724/smart/filters:cb(1630709497019)/https://www.thestar.com/content/dam/thestar/life/travel/2021/09/04/chicago-is-one-of-north-americas-most-fascinating-cities-heres-your-insiders-guide-to-exploring-it/chicago_cloud_gate_credit_christopher_alvarenga_unsplash.jpg"
+            alt="chicago">
+        <img id="Niagara Falls" src="https://corp-cdn.canadiangeographic.ca/2022/02/35425328-the_falls_at_sunrise-1024x628.jpg" alt="Niagara Falls">
+        <img id="Great Smoky Mountains" src="https://www.mysmokymountainpark.com/wp-content/uploads/2019/05/smoky-autumn-sunset-mountain-range_dp_680.jpg?width=730" alt="Great Smoky Mountains">
+        <img id="Jacksonville" src="https://a.cdn-hotels.com/gdcs/production173/d273/4b1f27ef-eeb2-4515-b8a6-1d507c3a736c.jpg" alt="Jacksonville">
+        <img id="Tampa" src="https://media.cntraveler.com/photos/601b10219d4d66f32970a192/16:9/w_2560%2Cc_limit/1097988940" alt="Tampa">
+        <img id="Orlando" src="https://a.cdn-hotels.com/gdcs/production9/d394/d2da586b-0f28-423e-b9e6-2cf51d57a459.jpg" alt="Orlando">
+        <img id="Miami" src="https://blog-www.pods.com/wp-content/uploads/2019/08/MG_6_1_Miami.jpg" alt="Miami">
+        <img id="Key West" src="https://webassets.tomtom.com/otf/images/media/6F190D7C-9DDD-4697-9E2E6AA689CD57F0?w=1200&h=960" alt="Key West">
+        <img id="Atlanta GA" src="https://www.extraspace.com/blog/wp-content/uploads/2018/06/atlanta-ga.jpg" alt="Atlanta GA">
+    </section>
+</body>
+
+</html>
